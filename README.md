@@ -1,9 +1,9 @@
-== RC4
+# RC4
 
 RC4 is a pure Ruby implementation of the Rc4 algorithm.
 
 
-== Usage
+## Usage
 
 First require the gem:
 
@@ -23,7 +23,7 @@ To decrypt:
 Since encrypt method is used for encryption and decryption, decrypt is
 just an alias to encrypt in order to make the usage more intuitive.
 
-== Note
+# Note
 
 The original algorithm implementation in Ruby by Max Prokopiev
 <max-prokopiev@yandex.ru>.
@@ -33,7 +33,6 @@ packaged it using gem-this.
 <asimic@gmail.com>
 
 
-I switched the project to use rspec2.
+I switched the project to use rspec2 and am the now the project's primary maintainer.
 
-Thanks,
 Caige Nichols <caigesn@gmail.com>
