@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-# -*- coding: raw-text -*-
+# coding: ascii
 
 require 'rc4'
 
