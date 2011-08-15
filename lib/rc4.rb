@@ -30,8 +30,7 @@ class RC4
   private
 
   def process(text)
-    0.upto(text.length-1) {|i| text[i] = text[i] ^ round}
-    text
+    text.unpack("C*").map { |c| c ^ round }.pack("C*")
   end
   
   def round

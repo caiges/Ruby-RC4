@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-# -*- coding: raw-text -*-
+# coding: ascii
 
 require 'rc4'
 
@@ -37,21 +37,21 @@ describe RC4 do
   it "should decrypt ciphertext 'BBF316E8D940AF0AD3' with key 'Key' to 'Plaintext'" do
     dec = RC4.new('Key')
 
-    decrypted = dec.decrypt('BBF316E8D940AF0AD3'.to_a.pack("H*"))
+    decrypted = dec.decrypt(['BBF316E8D940AF0AD3'].pack("H*"))
     decrypted.should match(/Plaintext/)
   end
 
   it "should decrypt ciphertext '1021BF0420' with key 'Wiki' to 'pedia' " do
     dec = RC4.new('Wiki')
 
-    decrypted = dec.decrypt('1021BF0420'.to_a.pack("H*"))
+    decrypted = dec.decrypt(['1021BF0420'].pack("H*"))
     decrypted.should match(/pedia/)
   end
 
   it "should decrypt ciphertext '45A01F645FC35B383552544B9BF5' with key 'Secret' to 'Attack at dawn'" do
     dec = RC4.new('Secret')
 
-    decrypted = dec.decrypt('45A01F645FC35B383552544B9BF5'.to_a.pack("H*"))
+    decrypted = dec.decrypt(['45A01F645FC35B383552544B9BF5'].pack("H*"))
     decrypted.should match(/Attack at dawn/)
   end
 end

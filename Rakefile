@@ -28,11 +28,11 @@ spec = Gem::Specification.new do |s|
   s.homepage          = "http://www.caigenichols.com/"
 
   s.has_rdoc          = false
-  s.extra_rdoc_files  = %w(README)
-  s.rdoc_options      = %w(--main README)
+  s.extra_rdoc_files  = %w(README.md)
+  s.rdoc_options      = %w(--main README.md)
 
   # Add any extra files to include in the gem
-  s.files             = %w(README Rakefile) + Dir.glob("{spec,lib/**/*}")
+  s.files             = %w(README.md Rakefile) + Dir.glob("{spec,lib/**/*}")
   s.require_paths     = ["lib"]
 
   # If you want to depend on other gems, add them here, along with any
