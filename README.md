@@ -36,3 +36,15 @@ packaged it using gem-this.
 I switched the project to use rspec2 and am the now the project's primary maintainer.
 
 Caige Nichols <caigesn@gmail.com>
+
+# License
+
+Ruby-RC4 is released under the MIT license.
+
+# Contributors
+
+(Please let me know if I missed anyone)
+
+- [caiges](http://github.com/caiges)
+- [juggler](http://github.com/juggler)
+- Alexandar Simic
