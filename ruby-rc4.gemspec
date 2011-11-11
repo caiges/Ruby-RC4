@@ -1,29 +1,31 @@
+# -*- encoding: utf-8 -*-
+
 Gem::Specification.new do |s|
+  s.name = %q{ruby-rc4}
+  s.version = "0.1.3"
 
-  # Change these as appropriate
-  s.name              = "ruby-rc4"
-  s.version           = "0.1.2"
-  s.summary           = "RubyRC4 is a pure Ruby implementation of the RC4 algorithm."
-  s.author            = "Caige Nichols"
-  s.email             = "caigesn@gmail.com"
-  s.homepage          = "http://www.caigenichols.com/"
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.authors = ["Caige Nichols", "James Healy"]
+  s.date = %q{2011-08-15}
+  s.email = %q{caigesn@gmail.com}
+  s.extra_rdoc_files = ["README.md"]
+  s.files = ["README.md", "Rakefile", "spec", "lib/rc4.rb"]
+  s.homepage = %q{http://www.caigenichols.com/}
+  s.rdoc_options = ["--main", "README.md"]
+  s.require_paths = ["lib"]
+  s.rubyforge_project = %q{ruby-rc4}
+  s.rubygems_version = %q{1.6.2}
+  s.summary = %q{RubyRC4 is a pure Ruby implementation of the RC4 algorithm.}
 
-  s.has_rdoc          = false
-  s.extra_rdoc_files  = %w(README.md)
-  s.rdoc_options      = %w(--main README.md)
+  if s.respond_to? :specification_version then
+    s.specification_version = 3
 
-  # Add any extra files to include in the gem
-  s.files             = %w(README.md Rakefile) + Dir.glob("{spec,lib/**/*}")
-  s.require_paths     = ["lib"]
-
-  # If you want to depend on other gems, add them here, along with any
-  # relevant versions
-  # s.add_dependency("some_other_gem", "~> 0.1.0")
-
-  # If your tests use any gems, include them here
-  s.add_development_dependency("rspec")
-
-  # If you want to publish automatically to rubyforge, you'll may need
-  # to tweak this, and the publishing task below too.
-  s.rubyforge_project = "ruby-rc4"
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_development_dependency(%q<rspec>, [">= 0"])
+    else
+      s.add_dependency(%q<rspec>, [">= 0"])
+    end
+  else
+    s.add_dependency(%q<rspec>, [">= 0"])
+  end
 end
