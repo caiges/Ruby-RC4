@@ -46,5 +46,5 @@ Ruby-RC4 is released under the MIT license.
 (Please let me know if I missed anyone)
 
 - [caiges](http://github.com/caiges)
-- [juggler](http://github.com/juggler) Original author
+- [juggler](http://github.com/juggler) (original author)
 - Alexandar Simic
