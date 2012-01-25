@@ -2,6 +2,7 @@
 # coding: ascii
 
 require 'rc4'
+require 'rspec'
 
 describe RC4 do
   it "should not crypt with a blank key" do

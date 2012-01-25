@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{ruby-rc4}
-  s.version = "0.1.3"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Caige Nichols", "James Healy"]
-  s.date = %q{2011-08-15}
+  s.authors = ["Caige Nichols"]
+  s.date = %q{2012-01-25}
   s.email = %q{caigesn@gmail.com}
   s.extra_rdoc_files = ["README.md"]
   s.files = ["README.md", "Rakefile", "spec", "lib/rc4.rb"]
@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project = %q{ruby-rc4}
   s.rubygems_version = %q{1.6.2}
   s.summary = %q{RubyRC4 is a pure Ruby implementation of the RC4 algorithm.}
+  s.test_files = Dir.glob('spec/*_spec.rb')
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
