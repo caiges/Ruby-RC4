@@ -2,14 +2,14 @@
 
 Gem::Specification.new do |s|
   s.name = %q{ruby-rc4}
-  s.version = "0.1.4"
+  s.version = "0.1.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Caige Nichols"]
   s.date = %q{2012-01-25}
   s.email = %q{caigesn@gmail.com}
   s.extra_rdoc_files = ["README.md"]
-  s.files = ["README.md", "Rakefile", "spec", "lib/rc4.rb"]
+  s.files = ["LICENSE", "README.md", "Rakefile", "spec", "lib/rc4.rb"]
   s.homepage = %q{http://www.caigenichols.com/}
   s.rdoc_options = ["--main", "README.md"]
   s.require_paths = ["lib"]

@@ -21,7 +21,7 @@ spec = Gem::Specification.new do |s|
 
   # Change these as appropriate
   s.name              = "ruby-rc4"
-  s.version           = "0.1.1"
+  s.version           = "0.1.5"
   s.summary           = "RubyRC4 is a pure Ruby implementation of the RC4 algorithm."
   s.author            = "Caige Nichols"
   s.email             = "caigesn@gmail.com"
@@ -32,7 +32,7 @@ spec = Gem::Specification.new do |s|
   s.rdoc_options      = %w(--main README.md)
 
   # Add any extra files to include in the gem
-  s.files             = %w(README.md Rakefile) + Dir.glob("{spec,lib/**/*}")
+  s.files             = %w(LICENSE README.md Rakefile) + Dir.glob("{spec,lib/**/*}")
   s.require_paths     = ["lib"]
 
   # If you want to depend on other gems, add them here, along with any
