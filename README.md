@@ -44,17 +44,15 @@ just an alias to encrypt in order to make the usage more intuitive.
 
 # Note
 
-The original algorithm implementation in Ruby by Max Prokopiev
-<me@maxprokopiev>.
+The original algorithm implementation in Ruby by [Max Prokopiev](http://maxprokopiev.com).
 
-Aleksandar Simic then modified it to include a test suite and gem
-packaged it using gem-this
-<asimic@gmail.com>.
+[Aleksandar Simic](mailto:asimic@gmail.com) then modified it to include a test suite and gem
+packaged it using gem-this.
 
 
 I switched the project to use rspec2 and I am now the project's primary maintainer.
 
-Caige Nichols <caigesn@gmail.com>
+[Caige Nichols](mailto:caigesn@gmail.com)
 
 # License
 
