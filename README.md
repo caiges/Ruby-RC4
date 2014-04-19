@@ -1,24 +1,43 @@
 # RC4
 
-RC4 is a pure Ruby implementation of the Rc4 algorithm.
+RC4 is a pure Ruby implementation of the RC4 algorithm.
 
+## Install
+
+Just install the gem:
+
+```
+gem install ruby-rc4
+```
+
+Or add it to your `Gemfile`:
+
+```ruby
+gem 'ruby-rc4'
+```
 
 ## Usage
 
 First require the gem:
 
-    require 'rc4' 
+```ruby
+require 'rc4'
+```
 
 To encrypt:
 
-    key = "nuff rspec"
-    enc = RC4.new(key)
-    encrypted = enc.encrypt("super-cool-test")
+```ruby
+key = "nuff rspec"
+enc = RC4.new(key)
+encrypted = enc.encrypt("super-cool-test")
+```
 
 To decrypt:
 
-    dec = RC4.new(key)
-    decrypted = dec.decrypt(encrypted)
+```ruby
+dec = RC4.new(key)
+decrypted = dec.decrypt(encrypted)
+```
 
 Since encrypt method is used for encryption and decryption, decrypt is
 just an alias to encrypt in order to make the usage more intuitive.
@@ -26,14 +45,14 @@ just an alias to encrypt in order to make the usage more intuitive.
 # Note
 
 The original algorithm implementation in Ruby by Max Prokopiev
-<max-prokopiev@yandex.ru>.
+<me@maxprokopiev>.
 
 Aleksandar Simic then modified it to include a test suite and gem
-packaged it using gem-this.
-<asimic@gmail.com>
+packaged it using gem-this
+<asimic@gmail.com>.
 
 
-I switched the project to use rspec2 and am the now the project's primary maintainer.
+I switched the project to use rspec2 and I am now the project's primary maintainer.
 
 Caige Nichols <caigesn@gmail.com>
 
