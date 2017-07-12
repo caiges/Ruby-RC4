@@ -1,10 +1,8 @@
 class RC4
   def initialize(str)
-    begin
-      raise ArgumentError, "RC4: Key supplied is blank"  if str.eql?('')
-      initialize_state(str)
-      @q1, @q2 = 0, 0
-    end
+    raise ArgumentError, "RC4: Key supplied is blank"  if str.eql?('')
+    initialize_state(str)
+    @q1, @q2 = 0, 0
   end
 
   def encrypt!(text)
