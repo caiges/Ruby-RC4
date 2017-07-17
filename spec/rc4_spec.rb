@@ -8,7 +8,7 @@ describe RC4 do
   it "should not crypt with a blank key" do
     expect { 
       RC4.new("")
-    }.to raise_error(SyntaxError, "RC4: Key supplied is blank")
+    }.to raise_error(ArgumentError, "RC4: Key supplied is blank")
  
   end
 
